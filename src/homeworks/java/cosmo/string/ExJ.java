@@ -10,6 +10,13 @@ package homeworks.java.cosmo.string;
 public class ExJ {
     public static void main(String[] args) {
         String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта" };
+        String res = " ";
+        for (int i=0; i<= input.length-1; i++){
+            if (input[i].length()>res.length()){
+                res=input[i];
+            }
+        }
+        System.out.println(res);
 
     }
 }
